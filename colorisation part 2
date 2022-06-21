@@ -5,9 +5,7 @@ from skimage.io import imsave, imshow
 import numpy as np
 from skimage.color import rgb2lab, lab2rgb
 
-model = tf.keras.models.load_model('colorize_autoencoder_nature.model',
-                                   custom_objects=None,
-                                   compile=True)
+model = tf.keras.models.load_model('colorize_autoencoder_nature.model', custom_objects=None, compile=True)
 
 img1_color=[]
 
