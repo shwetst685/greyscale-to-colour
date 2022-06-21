@@ -15,10 +15,7 @@ data_path = ''
 #normalize data
 train_normalize = ImageDataGenerator(rescale = 1. / 255)
 
-train = train_normalize.flow_from_directory(data_path,
-                                            target_size = (256,256),
-                                            batch_size = 340,
-                                            class_mode = None)
+train = train_normalize.flow_from_directory(data_path, target_size = (256,256), batch_size = 340, class_mode = None)
 
 X = []
 Y = []
